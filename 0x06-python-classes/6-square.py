@@ -44,17 +44,17 @@ class Square:
         if (type(value[1]) is not int or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
- 
-                                                                                                                                                                                                                                                                                def my_print(self):
-                                                                                                                                                                                                                                                                                            """Print method"""
-                                                                                                                                                                                                                                                                                                    if (self.size == 0):
-                                                                                                                                                                                                                                                                                                                    print()
-                                                                                                                                                                                                                                                                                                                            else:
-                                                                                                                                                                                                                                                                                                                                            for i in range(self.position[1]):
-                                                                                                                                                                                                                                                                                                                                                                print()
-                                                                                                                                                                                                                                                                                                                                                                            for j in range(0, self.size):
-                                                                                                                                                                                                                                                                                                                                                                                                for e in range(self.position[0]):
-                                                                                                                                                                                                                                                                                                                                                                                                                        print(" ", end="")
-                                                                                                                                                                                                                                                                                                                                                                                                                                        for j in range(self.size):
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                print("#", end="")
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                print()
+
+    def my_print(self):
+        """Print method"""
+        if (self.size == 0):
+            print()
+        else:
+            for i in range(self.position[1]):
+                print()
+                for j in range(0, self.size):
+                    for e in range(self.position[0]):
+                            print(" ", end="")
+                        for j in range(self.size):
+                            print("#", end="")
+                        print()
